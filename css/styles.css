@@ -8,7 +8,7 @@ body {
 .nav {
   position: absolute;
   top: 20px;
-  right: 20px; /* ⬅️ moved to right */
+  right: 20px; /* moved to right */
   font-size: 14px;
 }
 
