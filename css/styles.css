@@ -155,3 +155,67 @@ body {
     font-size: 14px;
      font-family: 'Garamond', serif;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .intro {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  
+  .intro h1 {
+    font-size: 48px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 40px;
+  }
+  
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  /* Improved centered navigation */
+  .nav-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .logo {
+    display: none;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers nav items */
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers list items */
+    gap: 15px;
+    margin-top: 15px;
+    padding: 0;
+    width: 100%;
+    max-width: 400px; /* Prevents too wide spacing on large phones */
+  }
+  
+  .nav li {
+    margin: 0; /* Removes default list margins */
+  }
+}

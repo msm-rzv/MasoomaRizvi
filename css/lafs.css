@@ -408,5 +408,175 @@ body {
    
 }
 
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navigation - same vibe but mobile optimized */
+  .nav-container {
+    position: static;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .logo {
+    display: none; /* Hides your name on mobile */
+  }
+  
+  .nav ul {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 
+  /* Intro section */
+  .intro-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  .intro-text {
+    order: 2;
+    max-width: 100%;
+  }
+  
+  .intro-img {
+    order: 1;
+    margin-bottom: 30px;
+  }
+  
+  .intro-img img {
+    max-width: 100%;
+  }
+  
+  .project-title {
+    font-size: 48px;
+  }
+  
+  .project-dates,
+  .project-description {
+    font-size: 18px;
+  }
+  
+  .section-label {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .toolkit, .read-time {
+    font-size: 14px;
+  }
+
+  /* Quote section */
+  .quote {
+    font-size: 20px;
+    margin: 40px 20px;
+    padding: 0 10px;
+  }
+
+  /* Content sections */
+  .discovery-section,
+  .define-section,
+  .develop-section,
+  .deliver-section {
+    padding: 0 20px;
+    margin-top: 80px;
+  }
+  
+  .discovery,
+  .define,
+  .develop,
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .discovery-section p:not(.discovery),
+  .define-section p:not(.define),
+  .develop-section p:not(.develop),
+  .deliver-section p:not(.section-title),
+  .discovery-section li,
+  .define-section li,
+  .develop-section li,
+  .deliver-section li {
+    font-size: 16px;
+  }
+  
+  .mission-container {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .mission-container p {
+    font-size: 20px;
+  }
+
+  /* Images */
+  .competitive-image,
+  .userflow-image,
+  .wire-frame-image,
+  .lofi-image,
+  .hifi-image,
+  .navlogo-image,
+  .pallete {
+    margin: 20px 0;
+  }
+  
+  .competitive-image img,
+  .userflow-image img,
+  .wire-frame-image img,
+  .lofi-image img,
+  .hifi-image img,
+  .navlogo-image img,
+  .pallete img {
+    max-width: 100%;
+  }
+
+  /* Progress tracker */
+  .progress-tracker {
+    display: none; /* Hidden on mobile */
+  }
+
+  /* Buttons */
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buttons a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  /* Footer */
+  .site-footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+  }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 36px;
+  }
+  
+  .quote {
+    font-size: 18px;
+  }
+  
+  .quotes p {
+    font-size: 14px;
+  }
+  
+  .mission-container p {
+    font-size: 18px;
+  }
+  
+  .buttons a {
+    font-size: 14px;
+  }
+}
 
