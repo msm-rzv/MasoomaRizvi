@@ -147,3 +147,10 @@ body {
   background-color: #000;
   color: #fff;
 }
+.site-footer {
+    text-align: center;
+    padding: 40px 30px; /* Original padding */
+    margin-top: 100px; /* Adds extra space above the footer */
+    font-size: 14px;
+     font-family: 'Garamond', serif;
+}
