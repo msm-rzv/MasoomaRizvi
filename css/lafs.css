@@ -5,6 +5,39 @@ body {
   color: #000;
 }
 
+.nav-container {
+     font-family: 'Cormorant Garamond', serif;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+  color: #000;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+
 
 .intro-section {
   display: flex;

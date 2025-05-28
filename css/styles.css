@@ -4,12 +4,22 @@ body {
   background-color: #fff;
   color: #000;
 }
-
-.nav {
+.nav-container {
   position: absolute;
   top: 20px;
-  right: 20px; /* ⬅️ moved to right */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   font-size: 14px;
+}
+
+.logo {
+  text-decoration: none;
+ 
+  color: #000;
 }
 
 .nav ul {
