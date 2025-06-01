@@ -156,40 +156,52 @@ body {
      font-family: 'Garamond', serif;
 }
 
-
 @media (max-width: 768px) {
   /* Mobile styles */
   .intro {
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 80px; /* Reduced from 100px */
+    margin-bottom: 40px; /* Reduced from 60px */
+    padding: 0 15px; /* Added side padding */
   }
   
   .intro h1 {
-    font-size: 48px;
+    font-size: 38px; /* Reduced from 48px */
+    line-height: 1.2; /* Better spacing */
   }
   
   .intro p {
-    font-size: 18px;
+    font-size: 16px; /* Reduced from 18px */
+    letter-spacing: 0.5px; /* Slightly tighter */
   }
   
   .projects {
     grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 40px;
+    padding: 0 15px 20px; /* Tighter side padding */
+    gap: 30px; /* Reduced from 40px */
   }
   
   .project {
-    width: 100%;
+    width: calc(100% - 10px); /* Slightly narrower */
     height: auto;
-    padding: 15px;
+    padding: 12px; /* Reduced from 15px */
+    margin: 0 auto; /* Centered */
+  }
+
+  /* Project text adjustments */
+  .project-title {
+    font-size: 16px; /* Slightly smaller */
   }
   
-  /* Improved centered navigation */
+  .project-description {
+    font-size: 13px; /* Smaller description */
+  }
+
+  /* Navigation (unchanged from your version) */
   .nav-container {
     position: static;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers horizontally */
+    align-items: center;
     padding: 15px;
     width: 100%;
   }
@@ -201,21 +213,26 @@ body {
   .nav {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centers nav items */
+    justify-content: center;
   }
   
   .nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers list items */
+    justify-content: center;
     gap: 15px;
     margin-top: 15px;
     padding: 0;
     width: 100%;
-    max-width: 400px; /* Prevents too wide spacing on large phones */
+    max-width: 400px;
   }
   
   .nav li {
-    margin: 0; /* Removes default list margins */
+    margin: 0;
+  }
+
+  /* Remove all transforms on mobile */
+  .project-wrapper .project img {
+    transform: none !important;
   }
 }
