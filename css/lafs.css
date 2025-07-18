@@ -162,6 +162,7 @@ body {
 }
 
 .progress-tracker {
+  font-family: 'Cormorant Garamond', serif;
   position: fixed;
   top: 50%;
   right: 30px;
@@ -405,6 +406,7 @@ body {
     padding: 40px 30px; /* Original padding */
     margin-top: 100px; /* Adds extra space above the footer */
     font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
    
 }
 
