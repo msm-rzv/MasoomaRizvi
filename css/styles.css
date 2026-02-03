@@ -94,6 +94,8 @@ body {
   transform: translateY(30px);
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.4s;
+  position: relative;
+  z-index: 2;
 }
 
 .intro .tagline {
@@ -107,6 +109,8 @@ body {
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.7s;
+  position: relative;
+  z-index: 1;
 }
 
 /* Project animations */
