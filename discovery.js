@@ -17,3 +17,43 @@ function checkVisibleSections() {
 
 window.addEventListener('scroll', checkVisibleSections);
 window.addEventListener('load', checkVisibleSections);
+
+// Scroll animation for research insights panels
+const researchPanels = document.querySelectorAll('.research-insights .panel');
+
+const observerOptions = {
+    threshold: 0.3,
+    rootMargin: '0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+researchPanels.forEach(panel => {
+    observer.observe(panel);
+});
+
+// Observe design principles panels for scroll animation
+const observeDesignPrinciples = () => {
+  const panels = document.querySelectorAll('.design-principles .panel');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  panels.forEach(panel => observer.observe(panel));
+};
+
+// Call this when DOM is ready
+document.addEventListener('DOMContentLoaded', observeDesignPrinciples);
