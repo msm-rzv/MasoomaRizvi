@@ -76,6 +76,11 @@ body {
   color: #808080;
 }
 
+/* ========== SECTION HEADINGS ========== */
+h2 {
+  font-weight: 400;
+}
+
 /* ========== INTRO SECTION ANIMATIONS ========== */
 .intro-section {
   display: flex;
